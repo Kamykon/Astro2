@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.michal.astro2.MainActivity">
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvTemp"
+                    android:layout_width="700dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="temperature"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/tvCondition"
+                    android:layout_width="700dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="condition"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/tvLocation"
+                    android:layout_width="700dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="7dp"
+                    android:text="location"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/tvLongitude"
+                    android:layout_width="700dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="long"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/tvLatitude"
+                    android:layout_width="700dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="7dp"
+                    android:text="lat"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/tvTime"
+                    android:layout_width="700dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="time"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/tvPressure"
+                    android:layout_width="700dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="6dp"
+                    android:text="pressure"
+                    android:textAlignment="center" />
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="700dp"
+                    android:layout_height="160dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    app:srcCompat="@mipmap/ic_launcher" />
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="700dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp" />
+
+                <EditText
+                    android:id="@+id/textInput"
+                    android:layout_width="700dp"
+                    android:layout_height="57dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="16dp"
+                    android:inputType="text" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="700dp"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/buttonSwap"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="1"
+                        android:text="C/F" />
+
+                    <Button
+                        android:id="@+id/button"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="1"
+                        android:text="Update" />
+
+                    <Button
+                        android:id="@+id/buttonSave"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="8dp"
+                        android:layout_weight="1"
+                        android:text="Save" />
+
+                    <Button
+                        android:id="@+id/buttonClear"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_weight="1"
+                        android:text="Clear" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvWind"
+                    android:layout_width="700dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Wind"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/tvWindSpeed"
+                    android:layout_width="700dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="7dp"
+                    android:text="windSpeed"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/tvVisibility"
+                    android:layout_width="700dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="visibility"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/tvWindDirection"
+                    android:layout_width="700dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="WindDirection"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/tvHumidity"
+                    android:layout_width="700dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="humidity"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="700dp"
+                    android:layout_height="wrap_content"
+                    android:text="Forecast"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/tvForecastDate"
+                    android:layout_width="700dp"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/tvForecastTemp"
+                    android:layout_width="700dp"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/tvForecastCondition"
+                    android:layout_width="700dp"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+</android.support.constraint.ConstraintLayout>

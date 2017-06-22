@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="D:\Studia\Semestr VI\PAM\astro2\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="12920f9016b8b05acbc2af7cdc13cef6946fe7d3">
+        <dex dex="D:\Studia\Semestr VI\PAM\astro2\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_7bf7a0367acfa3b148f6348a369064bdf8ef1469\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Studia\Semestr VI\PAM\astro2\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="9b3ab6a6bd14cec48496091ca5ceb218e30a1748">
+        <dex dex="D:\Studia\Semestr VI\PAM\astro2\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_a9d06826d42a47113f907b4b929d6d0f57f6ce9f\classes.dex" />
+    </item>
+
+</items>
